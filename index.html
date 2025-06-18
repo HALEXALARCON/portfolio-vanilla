@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Alexander Alarcon" />
+  <meta name="description"
+    content="Me encanta programar, diseñar y aprender nuevas tecnologias tambien me gusta bailar,viajar y conocer nuevos lugares y nuevas culturas" />
+  <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3" />
+  <meta name="theme-color" content="#09f" />
+  <meta name="view-transition" content="same-origin" />
+  <!-- Iconos  -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Fuente  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Portafolio</title>
+  <link rel="icon" href="assets/img/alex alarcon.png" type="image/png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script type="module" src="assets/js/main.js"></script>
+  <!-- integración email js -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "bSP7vOyWBePzrHiZk",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader flex--container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 268" class="loader__logo">
+      <path fill="currentColor"
+        d="M108.473 2.81055C114.675 -0.783262 122.325 -0.783265 128.527 2.81055L226.74 59.7212C232.912 63.298 236.712 69.8919 236.712 77.0259V190.974C236.712 198.108 232.912 204.702 226.74 208.279L128.527 265.189C122.325 268.783 114.675 268.783 108.473 265.189L10.2601 208.279C4.08755 204.702 0.287529 198.108 0.287529 190.974V77.0259C0.287529 69.8919 4.08754 63.298 10.2601 59.7212L108.473 2.81055Z">
+      </path>
+    </svg>
+  </div>
+  <!-- header  -->
+  <header class="header">
+    <nav class="navbar grid--container flex--container">
+      <a class="navbar__logo flex--container" href="#"><i class='bx bx-font-color'></i>Alex</a>
+
+
+      <div id="nav" class="navbar__menu spanish">
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
+
+        <ul class="navbar__list flex--container">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">Acerca de Mí</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Habilidades</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Portafolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <!-- darkmode toggle -->
+      <div class="navbar__toggles flex--container">
+        <div class="navbar__toggle--darkmode flex--container">
+          <input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+            <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+          </label>
+        </div>
+        <!-- language toggle -->
+        <div class="navbar__toggle--language flex--container">
+          <input type="checkbox" name="language-toggle" id="language-toggle" class="navbar__toggle--language-input" />
+          <label for="language-toggle" class="navbar__toggle--language-label"></label>
+        </div>
+      </div>
+      <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home">
+      <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+      <i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
+      <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+      <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+      <i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+      <i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
+      <i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+      <i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
+      <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+      <i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
+      <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i>
+      <div class="home__container grid--container">
+        <div class="home__image">
+          <img class="fondo" src="assets/img/Alex-Fondo-translucido.png" alt="profile photo" title="Tu nombre" />
+        </div>
+
+        <ul class="home__social flex--container">
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://www.linkedin.com/in/alex-alarc%C3%B3n-/" target="_blank"><i
+                class="bx bxl-linkedin"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://wa.me/573186915517" target="_blank" rel="noopener noreferrer"><i
+                class="bx bxl-whatsapp"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://github.com/HALEXALARCON" target="_blank"><i
+                class="bx bxl-github"></i></a>
+          </li>
+        </ul>
+
+        <div class="home__info">
+          <h1 class="home__title">Alex Alarcón</h1>
+
+          <p class="home__description">
+            Apasionado por la creación de interfaces web modernas, dinámicas y funcionales,
+            me enfoco en construir experiencias digitales atractivas, accesibles y optimizadas, combinando buenas
+            prácticas de desarrollo con un enfoque en rendimiento y diseño responsivo.
+          </p>
+        </div>
+
+        <div class="home__buttons">
+          <a class="btn btn--primary" href="./assets/cv-pdf/CV_Frontend_Alex.pdf" title="Descargar mi CV"
+            download="CV_Frontend_Alex" rel="noreferrer nofollow">
+            Descargar CV
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about section">
+      <h2 class="section__title">Acerca de Mí</h2>
+
+      <div class="about__container grid--container">
+        <p class="about__description">
+          Me encanta programar, diseñar y aprender nuevas tecnologias tambien me gusta mucho Hacer
+          deporte,bailar,viajar,aprender nuevas gastronomias,conocer nuevos lugares y nuevas culturas.
+        </p>
+
+        <div class="about__cards flex--container">
+          <!--Card 1 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/viajes.jpeg" alt="viajando por el mundo"
+              title="viajando por el mundo" />
+          </div>
+          <!--Card 2 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/programando.png" alt="programando" title="programando" />
+          </div>
+          <!--Card 3 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/comida.jpeg" alt="Comida Del Mundo"
+              title="Comida Del Mundo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills section">
+      <h2 class="section__title">Habilidades</h2>
+
+      <div class="skills__container grid--container">
+        <div class="skills__wrapper flex--container">
+          <div class="skills__cards flex--container">
+            <!--Card 1 -->
+            <details class="skills__cards-container" name="moreInfo" open>
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-html5 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">HTML</h3>
+
+                <p class="skills__card-description">
+                  Etiquetas
+                  <br>
+                  Accesibilidad
+                  <br>
+                  SEO
+                  <br>
+                  Multimedia
+                  <br>
+                  Diseño responsivo
+                </p>
+              </div>
+            </details>
+            <!--Card 2 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-css3 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">CSS3</h3>
+
+                <p class="skills__card-description">
+                  Css
+                  <br>
+                  Responsivo
+                  <br>
+                  Flexbox
+                  <br>
+                  Grid
+                  <br>
+                  Animaciones
+                  <br>
+                  propiedades personalizadas o variables
+                </p>
+              </div>
+            </details>
+            <!--Card 3 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-javascript flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Javascript</h3>
+
+                <p class="skills__card-description">
+                  ES7
+                  <br>
+                  AJAX
+                  <br>
+                  JSON
+                  <br>
+                  API
+                  <br>
+                  DOM
+                  <br>
+                  Objetos
+                  <br>
+                  Arreglos
+                </p>
+              </div>
+            </details>
+            <!--Card 4 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-react flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">React</h3>
+
+                <p class="skills__card-description">
+                  Hooks
+                  <br>
+                  Context
+                  <br>
+                  Redux
+                  <br>
+                  Mern
+                  <br>
+                  Consumo de APIs
+                  <br>
+                  React Router
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="skills__tags flex--container">
+          <!-- <h3 class="skills__tags-title">Habilidades Blandas</h3> -->
+          <div class="skills__tags-container flex--container">
+            <span class="skills__tag">Responsable</span>
+            <span class="skills__tag">Trabajo en equipo</span>
+            <span class="skills__tag">Creativo</span>
+            <span class="skills__tag">Puntual</span>
+            <span class="skills__tag">Proactivo</span>
+            <span class="skills__tag">Autodidacta</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects section">
+      <h2 class="section__title">Proyectos</h2>
+
+      <!-- contenedor original, igual que antes -->
+      <div id="projectsContainer" class="projects__container grid--container">
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/RickandMorty.jpg" alt="Rick and Morty" title="Rick and Morty" />
+            </div>
+            <div class="projects__info">
+              <h3 class="projects__name">Rick and Morty</h3>
+              <p class="projects__description">
+                En esta aplicación puedes encontrar información de todos los personajes en la serie de Rick and Morty.
+              </p>
+              <div class="projects__buttons">
+                <a href="https://r-a-m.netlify.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn projects__button" title="Ver demo en Netlify">
+                  VER DEMO
+                </a>
+                <a href="https://github.com/HALEXALARCON/RickAndMorty" target="_blank" rel="noopener noreferrer"
+                  class="btn projects__button" title="Ver código en GitHub">
+                  VER CÓDIGO
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/Pokemon_APP.jpg" alt="Pokedex APP" title="Pokedex APP" />
+            </div>
+            <div class="projects__info">
+              <h3 class="projects__name">Pokedex</h3>
+              <p class="projects__description">
+                La aplicación Pokedex es un sitio web que permite la interacción completa con todos los Pokémon
+                existentes, obteniendo información a través del consumo de la API oficial de Pokémon.
+              </p>
+              <div class="projects__buttons">
+                <a href="https://mountruos-de-bolsillo.netlify.app/#/pokedex" target="_blank" rel="noopener noreferrer"
+                  class="btn projects__button" title="Ver demo en Netlify">
+                  VER DEMO
+                </a>
+                <a href="https://github.com/HALEXALARCON/mounstruosdebolsillo" target="_blank" rel="noopener noreferrer"
+                  class="btn projects__button" title="Ver código en GitHub">
+                  VER CÓDIGO
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/crud-app.jpg" alt="CRUD-APP" title="CRUD-APP" />
+            </div>
+            <div class="projects__info">
+              <h3 class="projects__name">CRUD</h3>
+              <p class="projects__description">
+                La aplicación CRUD (Crear, Leer, Actualizar, Borrar) es una página que simula un centro de control de
+                usuarios. Permite la visualización de información obtenida de una API. Además, es posible crear,
+                actualizar y eliminar cualquier usuario de la lista.
+              </p>
+              <div class="projects__buttons">
+                <a href="https://crd-frm.netlify.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn projects__button" title="Ver demo en Netlify">
+                  VER DEMO
+                </a>
+                <a href="https://github.com/HALEXALARCON/Form1er" target="_blank" rel="noopener noreferrer"
+                  class="btn projects__button" title="Ver código en GitHub">
+                  VER CÓDIGO
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/Weather-APP.jpg" alt="Clima-APP" title="Aplicación del Clima" />
+            </div>
+            <div class="projects__info">
+              <h3 class="projects__name">CLIMA</h3>
+              <p class="projects__description">
+                La aplicacion está conectada a una API que detecta automáticamente nuestra ubicación una vez que el
+                usuario habilita la opción para otorgar acceso a su ubicación actual.
+              </p>
+              <div class="projects__buttons">
+                <a href="https://mi-clima.netlify.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn projects__button" title="Ver demo en Netlify">
+                  VER DEMO
+                </a>
+                <a href="https://github.com/HALEXALARCON/weather-App" target="_blank" rel="noopener noreferrer"
+                  class="btn projects__button" title="Ver código en GitHub">
+                  VER CÓDIGO
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- aquí añadimos solo estos controles -->
+      <div class="projects__controls">
+        <button id="prevProject" class="btn__projects">&larr; Anterior</button>
+        <button id="nextProject" class="btn__projects">Siguiente &rarr;</button>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <h2 class="section__title">Contáctame</h2>
+
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <!-- <h3 class="contact__info-title">Contáctame</h3> -->
+          <p class="contact__info-description">
+            Estoy listo para trabajos de desarrollo & proyectos.
+            Con todas las ganas de brindar soluciones,Aportar mi
+            grano de arena y ayudar en todo lo que pueda con toda la disposición y lleno de energia positiva estare
+            encantado de atenderte lo mas pronto posible.
+          </p>
+
+        </div>
+        <div class="contact__form">
+          <h3 class="contact__form-title">Enviar mensaje</h3>
+          <form id="form" class="contact__form-container">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Nombre</label>
+              <input type="text" id="name" name="name" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Correo</label>
+              <input type="email" id="email" name="email" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Asunto</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Mensaje</label>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+            <dialog class="contact__form-modal" id="modal">
+              Formulario enviado con éxito!
+              <button type="reset" id="btn_close-modal">Cerrar</button>
+            </dialog>
+
+            <button type="submit" class="btn contact__form-button">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer-->
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__social">
+        <!-- <h3>Links De Contacto</h3> -->
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://github.com/HALEXALARCON" target="_blank"
+              rel="noreferrer nofollow"><i class="bx bxl-github"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://wa.me/573186915517" target="_blank"
+              rel="noreferrer nofollow"><i class="bx bxl-whatsapp"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.linkedin.com/in/alex-alarc%C3%B3n-/" target="_blank"
+              rel="noreferrer nofollow"><i class="bx bxl-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy"><span id="currentyear"></span> Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    window.addEventListener('load', () => {
+      const slides = Array.from(document.querySelectorAll('#projectsContainer .projects__project'));
+      const btnPrev = document.getElementById('prevProject');
+      const btnNext = document.getElementById('nextProject');
+      let current = 0;
+
+      const update = () => {
+        slides.forEach((s, i) => s.style.display = i === current ? 'block' : 'none');
+        btnPrev.disabled = current === 0;
+        btnNext.disabled = current === slides.length - 1;
+      };
+
+      btnPrev.addEventListener('click', () => {
+        if (current > 0) current--, update();
+      });
+      btnNext.addEventListener('click', () => {
+        if (current < slides.length - 1) current++, update();
+      });
+
+      update(); // mostrar el primero al cargar
+    });
+  </script>
+</body>
+
+</html>
