@@ -20,7 +20,7 @@
 	--normal-font-size: 16px;
 	--small-font-size: 12px;
 
-	/* Wight */
+	/* Weight */
 	--font-semi-bold: 600;
 
 	/* Margin */
@@ -149,7 +149,7 @@ html {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #ffffff;
+	background-color: #bee8ff;;
 	z-index: 3;
 	display: flex;
 	align-items: center;
@@ -164,6 +164,12 @@ html {
 		height: 6rem;
 		animation: jump 1.1s infinite linear;
 	}
+}
+
+@media (prefers-color-scheme: dark) {
+  .loader {
+    background-color: #1e0238; /* este es el valor de var(--bg-color) en modo oscuro */
+  }
 }
 
 .loader--hidden {
@@ -215,7 +221,7 @@ html {
 			padding: 2rem 0;
 			transition: all 0.6s;
 			z-index: var(--z-modal);
-			/* -------------------------------------------------------------------------- */
+
 			&:target {
 				top: 0;
 			}
@@ -988,40 +994,40 @@ html {
 
 /* Oculta el loader con transición */
 .loader--hidden {
-  opacity: 0 !important;
-  visibility: hidden !important;
-  transition: opacity 0.4s, visibility 0.4s;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 0.4s, visibility 0.4s;
 }
 
 /* ========== Paginación Glassmorphism ========== */
 .pagination {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 2rem 0;
-  padding: 0.75rem 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .pagination button {
-  background: transparent;
-  border: none;
-  padding: 0.5rem 0.75rem;
-  font-size: 1rem;
-  font-weight: var(--font-semi-bold);
-  color: var(--primary-color);
-  cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 0.3s;
+    background: transparent;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-weight: var(--font-semi-bold);
+    color: var(--primary-color);
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
 }
 
 .pagination button:hover,
 .pagination button.active {
-  opacity: 1;
+opacity: 1;
 }
 
 /* ============================================ */
@@ -1030,39 +1036,39 @@ html {
 
 /* 1) El footer__container ya es grid; centro sus celdas */
 .footer__container {
-  justify-items: center;      /* centro cada hijo horizontalmente */
+    justify-items: center;      /* centro cada hijo horizontalmente */
 }
 
 /* 2) Centrar internamente el h3 y la lista */
 .footer__social {
   /* Si quiero que ocupe toda la fila del grid: */
-  grid-column: 1 / -1;        /* opcional: expando la celda a todo el ancho */
+    grid-column: 1 / -1;        /* opcional: expando la celda a todo el ancho */
 
   /* Alineación interna */
-  display: flex;              /* contenedor flex vertical */
-  flex-direction: column;     /* apila título y lista */
-  align-items: center;        /* centra horizontalmente */
-  text-align: center;         /* respaldo para texto inline */
+    display: flex;              /* contenedor flex vertical */
+    flex-direction: column;     /* apila título y lista */
+    align-items: center;        /* centra horizontalmente */
+    text-align: center;         /* respaldo para texto inline */
 }
 
 /* 3) Disponer los iconos en fila y centrados */
 .footer__social-list {
-  display: inline-flex;       /* flex inline para que se centre por text-align */
-  justify-content: center;    /* centra los items dentro del flex */
-  gap: var(--mr-2);           /* espacio entre iconos */
-  margin: 0;                  /* elimina márgenes por defecto */
-  padding: 30px 0 0 0;                 /* elimina padding por defecto */
-  list-style: none;           /* quita viñetas */
+    display: inline-flex;       /* flex inline para que se centre por text-align */
+    justify-content: center;    /* centra los items dentro del flex */
+    gap: var(--mr-2);           /* espacio entre iconos */
+    margin: 0;                  /* elimina márgenes por defecto */
+    padding: 30px 0 0 0;        /* elimina padding por defecto */
+    list-style: none;           /* quita viñetas */
 }
 
 /* Home social icons */
 .home__social-link i {
-  font-size: 3rem;  /* Ajusta el valor a tu gusto */
+    font-size: 3rem;  
 }
 
 /* Footer social icons */
 .footer__social-link i {
-  font-size: 3.5rem;  /* Mismo tamaño en el footer */
+    font-size: 3.5rem;  /* Mismo tamaño en el footer */
 }
 
 .footer__copy {

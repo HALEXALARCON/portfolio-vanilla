@@ -13,3 +13,10 @@ parallax();
 activeMenu();
 sendEmail();
 changeLanguage();
+// Activar modo oscuro cuando se marca el toggle
+const darkToggle = document.getElementById('darkmode-toggle');
+
+darkToggle.addEventListener('change', (e) => {
+    document.documentElement.classList.toggle('dark', e.target.checked);
+});
+
